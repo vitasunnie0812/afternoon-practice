@@ -11,6 +11,7 @@ def primes_gen():
             # if n is divisible by any number btw 2 and itself-1 then increase count by 1
             if n % i == 0:
                 count+=1
+                #no need to count here, just breaking out works as well
         # if count is =0 then the number is only divisible by 1 and itself
         if count == 0 :
             yield n
